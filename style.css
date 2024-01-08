@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 200px 200px 200px;
+    grid-template-areas: "header header header header"
+    "title title title title"
+    "cinema cinema cinema cinema"
+    "movie movie movie movie"
+    "film film film film";
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+}
+
+.netflix-logo{
+    height: 100px;
+    margin-left: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+
+a:hover{
+    color: rgb(168, 168, 168);
+}
+
+.main-title{
+    grid-area: title;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    margin-left: 50px;
+    color: white;
+    font-size: 3vh;
+}
+
+.first-line-movies{
+    grid-area: cinema;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-line-movies{
+    grid-area: movie;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-line-movies{
+    grid-area: film;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-movies-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
