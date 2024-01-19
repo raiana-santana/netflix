@@ -1,149 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Netflix</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="grid-container">
-      <header class="header">
-        <nav class="navbar">
-          <img src="imagens/netflix.png" class="netflix-logo" alt="Netflix" />
+        <header class="header">
+            <nav class="navbar">
+                <img src="imagens/netflix.png" class="netflix-logo" alt="Netflix">
 
-          <a href="#">Início</a>
-          <a href="#">Séries</a>
-          <a href="#">Filmes</a>
-          <a href="#">Mais recentes</a>
-          <a href="#">Minha lista</a>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Mais recentes</a>
+                <a href="#">Minha lista</a>
 
-          <img src="imagens/user.png" class="user-pic" onclick="toggleMenu()" />
+                <img src="imagens/user.png" class="user-pic" onclick="toggleMenu()">
 
-          <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu">
-              <div class="user-info">
-                <img src="imagens/user.png" />
-                <h3>Raiana Santana</h3>
-              </div>
-              <hr />
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="imagens/user.png">
+                            <h3>Raiana Santana</h3>
+                        </div>
+                        <hr>
 
-              <a href="#" class="sub-menu-link">
-                <img src="imagens/setting.png" alt="" />
-                <p>Configurar Perfil</p>
-                <span>></span>
-              </a>
-              <a href="#" class="sub-menu-link">
-                <img src="imagens/profile.png" alt="" />
-                <p>Conta</p>
-                <span>></span>
-              </a>
-              <a href="#" class="sub-menu-link">
-                <img src="imagens/help.png" alt="" />
-                <p>Central de Ajuda</p>
-                <span>></span>
-              </a>
-              <a href="#" class="sub-menu-link">
-                <img src="imagens/logout.png" alt="" />
-                <p>Sair</p>
-                <span>></span>
-              </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="imagens/edit.png" alt="">
+                            <p>Gerenciar Perfil</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="imagens/profile.png" alt="">
+                            <p>Conta</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="imagens/help.png" alt="">
+                            <p>Central de Ajuda</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="imagens/logout.png" alt="">
+                            <p>Sair</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div></div>
+        </header>
+
+        <div class="main-title">
+            <h1>Filmes, séries e muito mais, sem limites!</h1>
+        </div>
+
+        <div class="first-line-movies">
+            <div>
+                <img src="imagens/bluemiracle.jpg" alt="Blue Miracle" class="cinemaMovies">
+                <img src="imagens/iceroad.jpg" alt="Ice Road" class="cinemaMovies">
+                <img src="imagens/theadamproject.jpg" alt="The Adam Project" class="cinemaMovies">
+                <img src="imagens/theoldguard.jpg" alt="The Old Guard" class="cinemaMovies">
+                <img src="imagens/uncharted.jpg" alt="Uncharted" class="cinemaMovies">
+                <img src="imagens/thegrayman.jpg" alt="The Gray Man" class="cinemaMovies">
             </div>
-          </div>
-        </nav>
-
-        <div></div>
-      </header>
-
-      <div class="main-title">
-        <h1>Filmes, séries e muito mais, sem limites!</h1>
-      </div>
-
-      <div class="first-line-movies">
-        <div>
-          <img
-            src="imagens/bluemiracle.jpg"
-            alt="Blue Miracle"
-            class="cinemaMovies"
-          />
-          <img src="imagens/iceroad.jpg" alt="Ice Road" class="cinemaMovies" />
-          <img
-            src="imagens/theadamproject.jpg"
-            alt="The Adam Project"
-            class="cinemaMovies"
-          />
-          <img
-            src="imagens/theoldguard.jpg"
-            alt="The Old Guard"
-            class="cinemaMovies"
-          />
-          <img
-            src="imagens/uncharted.jpg"
-            alt="Uncharted"
-            class="cinemaMovies"
-          />
-          <img
-            src="imagens/thegrayman.jpg"
-            alt="The Gray Man"
-            class="cinemaMovies"
-          />
         </div>
-      </div>
 
-      <div class="second-line-movies">
-        <div>
-          <img src="imagens/aquaman.jpg" alt="Aquaman" class="cinemaMovies" />
-          <img
-            src="imagens/beyondtheuniverse.jpg"
-            alt="Beyond The Universe"
-            class="cinemaMovies"
-          />
-          <img
-            src="imagens/heartofstone.jpg"
-            alt="Heart of Stone"
-            class="cinemaMovies"
-          />
-          <img src="imagens/iseeyou.jpg" alt="I See You" class="cinemaMovies" />
-          <img src="imagens/missing.jpg" alt="Missing" class="cinemaMovies" />
-          <img src="imagens/mogli.jpg" alt="Mowgli" class="cinemaMovies" />
+        <div class="second-line-movies">
+            <div>
+                <img src="imagens/aquaman.jpg" alt="Aquaman" class="cinemaMovies">
+                <img src="imagens/beyondtheuniverse.jpg" alt="Beyond The Universe" class="cinemaMovies">
+                <img src="imagens/heartofstone.jpg" alt="Heart of Stone" class="cinemaMovies">
+                <img src="imagens/iseeyou.jpg" alt="I See You" class="cinemaMovies">
+                <img src="imagens/missing.jpg" alt="Missing" class="cinemaMovies">
+                <img src="imagens/mogli.jpg" alt="Mowgli" class="cinemaMovies">
+            </div>
         </div>
-      </div>
 
-      <div class="third-line-movies">
-        <div>
-          <img
-            src="imagens/mynameisvendetta.jpg"
-            alt="My Name is Vendetta"
-            class="cinemaMovies"
-          />
-          <img
-            src="imagens/rednotice.jpg"
-            alt="Red Notice"
-            class="cinemaMovies"
-          />
-          <img
-            src="imagens/thewalkingdead.jpg"
-            alt="The Walking Dead"
-            class="cinemaMovies"
-          />
-          <img src="imagens/troll.jpg" alt="Troll" class="cinemaMovies" />
-          <img
-            src="imagens/loveatfirstsight.jpg"
-            alt="Love at First Sight"
-            class="cinemaMovies"
-          />
-          <img src="imagens/mosul.jpg" alt="Mosul" class="cinemaMovies" />
+        <div class="third-line-movies">
+            <div>
+                <img src="imagens/mynameisvendetta.jpg" alt="My Name is Vendetta" class="cinemaMovies">
+                <img src="imagens/rednotice.jpg" alt="Red Notice" class="cinemaMovies">
+                <img src="imagens/thewalkingdead.jpg" alt="The Walking Dead" class="cinemaMovies">
+                <img src="imagens/troll.jpg" alt="Troll" class="cinemaMovies">
+                <img src="imagens/loveatfirstsight.jpg" alt="Love at First Sight" class="cinemaMovies">
+                <img src="imagens/mosul.jpg" alt="Mosul" class="cinemaMovies">
+            </div>
         </div>
-      </div>
     </div>
 
-    <script>
-      let subMenu = document.getElementById("subMenu");
+<script>
+    let subMenu = document.getElementById("subMenu");
 
-      function toggleMenu() {
+    function toggleMenu(){
         subMenu.classList.toggle("open-menu");
-      }
-    </script>
-  </body>
+    }
+</script>
+
+</body>
+
 </html>
