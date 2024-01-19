@@ -83,13 +83,6 @@ a:hover{
     justify-content: center;
 }
 
-.image-movies-line{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
 .cinemaMovies:hover{
     cursor: pointer;
     transition: transform 1s;
