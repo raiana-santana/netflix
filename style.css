@@ -36,16 +36,23 @@ body{
 
 .navbar{
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     margin-right: 50px;
     align-items: center;
     width: 100%;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: white;
     margin: 0 20px;
+}
+
+.user-pic{
+    width: 60px;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 a:hover{
