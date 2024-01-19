@@ -33,6 +33,7 @@ body{
 .netflix-logo{
     height: 100px;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 .navbar{
