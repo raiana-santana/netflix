@@ -8,58 +8,67 @@
 </head>
 
 <body>
-    <div class="grid-container">
-        <header class="header">
-            <nav class="navbar">
-                <img src="imagens/netflix.png" class="netflix-logo" alt="Netflix">
-
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Mais recentes</a>
-                <a href="#">Minha lista</a>
-
-                <img src="imagens/user.png" class="user-pic" onclick="toggleMenu()">
-
-                <div class="sub-menu-wrap" id="subMenu">
-                    <div class="sub-menu">
-                        <div class="user-info">
-                            <img src="imagens/user.png">
-                            <h3>Raiana Santana</h3>
-                        </div>
-                        <hr>
-
-                        <a href="#" class="sub-menu-link">
-                            <img src="imagens/edit.png" alt="">
-                            <p>Gerenciar Perfil</p>
-                            <span>></span>
-                        </a>
-                        <a href="#" class="sub-menu-link">
-                            <img src="imagens/profile.png" alt="">
-                            <p>Conta</p>
-                            <span>></span>
-                        </a>
-                        <a href="#" class="sub-menu-link">
-                            <img src="imagens/help.png" alt="">
-                            <p>Central de Ajuda</p>
-                            <span>></span>
-                        </a>
-                        <a href="#" class="sub-menu-link">
-                            <img src="imagens/logout.png" alt="">
-                            <p>Sair</p>
-                            <span>></span>
-                        </a>
+    <header>
+        <nav>
+            <img id="logo" src="./imagens/netflix.png" alt="">
+            <div class="mobile">
+                <img id="symbol" src="./imagens/netflixsymbol.png" alt="">
+                <img id="lupa"src="./imagens/lupa.png" alt="">
+            </div>
+           
+            <ul>
+                <li> <a href="#">Início</a></li>
+                <li>  <a href="#">Séries</a></li>
+                <li>  <a href="#">Filmes</a></li>
+                <li>   <a href="#">Mais recentes</a></li>
+                <li>  <a href="#">Minha lista</a></li>
+            </ul>
+            <img id="user" src="./imagens/user.png" alt="" onclick="toggleMenu()">
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="imagens/user.png">
+                        <h3>Raiana Santana</h3>
                     </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="imagens/edit.png" alt="">
+                        <p>Gerenciar Perfil</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="imagens/profile.png" alt="">
+                        <p>Conta</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="imagens/help.png" alt="">
+                        <p>Central de Ajuda</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="imagens/logout.png" alt="">
+                        <p>Sair</p>
+                        <span>></span>
+                    </a>
                 </div>
-            </nav>
-
-            <div></div>
-        </header>
-
+            </div>
+        </nav>
+         <div class="buttons">
+                <button class="btn">Séries</button>
+                <button class="btn">Filmes</button>
+                <button class="btn">Categorias</button>
+            </div>
+    </header>
+    <section class="title">
         <div class="main-title">
             <h1>Filmes, séries e muito mais, sem limites!</h1>
         </div>
-
+    </section>
+    <div class="section_container">
+    <section>
         <div class="first-line-movies">
             <div>
                 <img src="imagens/bluemiracle.jpg" alt="Blue Miracle" class="cinemaMovies">
@@ -70,7 +79,9 @@
                 <img src="imagens/thegrayman.jpg" alt="The Gray Man" class="cinemaMovies">
             </div>
         </div>
+    </section>
 
+    <section>
         <div class="second-line-movies">
             <div>
                 <img src="imagens/aquaman.jpg" alt="Aquaman" class="cinemaMovies">
@@ -81,7 +92,9 @@
                 <img src="imagens/mogli.jpg" alt="Mowgli" class="cinemaMovies">
             </div>
         </div>
-
+ 
+    </section>
+    <section>
         <div class="third-line-movies">
             <div>
                 <img src="imagens/mynameisvendetta.jpg" alt="My Name is Vendetta" class="cinemaMovies">
@@ -92,16 +105,23 @@
                 <img src="imagens/mosul.jpg" alt="Mosul" class="cinemaMovies">
             </div>
         </div>
-    </div>
+    </section>
 
-<script>
-    let subMenu = document.getElementById("subMenu");
+    <footer>
+        <section>
+            <img src="./imagens/home.png" alt="">
+        </section>
+    </footer>
 
-    function toggleMenu(){
-        subMenu.classList.toggle("open-menu");
-    }
-</script>
+</div>
 
+    <script>
+        let subMenu = document.getElementById("subMenu");
+    
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 
 </html>
